@@ -12,5 +12,8 @@ icacls.exe .\timble_human_dev_key.pem /grant:r "$($env:USERNAME):(r)"
 
 icacls.exe .\timble_human_dev_key.pem /inheritance:r
 
+## VS Code: NoPermissions (FileSystemError): Error: EACCES: permission denied
+
+sudo chown -R emanuel /home/emanuel/test/
 
 
