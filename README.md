@@ -16,5 +16,6 @@ icacls.exe .\timble_human_dev_key.pem /inheritance:r
 
 sudo chown -R emanuel /home/emanuel/test/
 
-SSH windows to Ec2
+
+## SSH windows to Ec2
 ssh -i "D:\aws-key\dev_key.pem" ubuntu@ec2-3-111-193-227.ap-south-1.compute.amazonaws.com
