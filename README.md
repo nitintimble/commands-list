@@ -14,7 +14,8 @@ icacls.exe .\timble_human_dev_key.pem /inheritance:r
 
 ## VS Code: NoPermissions (FileSystemError): Error: EACCES: permission denied
 
-sudo chown -R emanuel /home/emanuel/test/
+sudo chown -R ubuntu usr/local/code/
+sudo -R user folder-path
 
 
 ## SSH windows to Ec2
