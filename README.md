@@ -16,7 +16,7 @@ icacls.exe .\timble_human_dev_key.pem /inheritance:r
 
 sudo chown -R ubuntu usr/local/code/
 
-sudo -R user folder-path
+sudo chown -R user folder-path
 
 
 ## SSH windows to Ec2
