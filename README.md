@@ -15,6 +15,7 @@ icacls.exe .\timble_human_dev_key.pem /inheritance:r
 ## VS Code: NoPermissions (FileSystemError): Error: EACCES: permission denied
 
 sudo chown -R ubuntu usr/local/code/
+
 sudo -R user folder-path
 
 
