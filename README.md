@@ -25,4 +25,5 @@ ssh -i "D:\aws-key\dev_key.pem" ubuntu@ec2-3-111-193-227.ap-south-1.compute.amaz
 ## Terminate the Existing Process (Error: listen EADDRINUSE: address already in use :::3000)
 lsof -i :3000
 
+
 kill -9 <PID>
