@@ -1,6 +1,12 @@
 # commands-list
 miscellaneous commands
 
+## Environment - v s code - bitbadh - windows
+
+python -m venv venv
+
+source venev/scripts/activate
+
 ## chmod 400 alternative for windows
 
 
