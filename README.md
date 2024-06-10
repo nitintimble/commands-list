@@ -33,3 +33,14 @@ lsof -i :3000
 
 
 kill -9 <PID>
+
+## vd code ssh connect ec2
+
+icacls C:\Users\nitin\.ssh\timble_human_dev_key.pem /inheritance:r
+
+
+icacls C:\Users\nitin\.ssh\timble_human_dev_key.pem /remove:g "NITINM-LTP\Admin account"
+
+
+icacls C:\Users\nitin\.ssh\timble_human_dev_key.pem /grant:r "NITINM-LTP\nitin:(R)"
+
