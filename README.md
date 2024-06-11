@@ -32,7 +32,7 @@ ssh -i "D:\aws-key\dev_key.pem" ubuntu@ec2-3-111-193-227.ap-south-1.compute.amaz
 sudo lsof -i :3000
 
 
-sudo kill -9 <PID>
+sudo kill -9 < PID >
 
 ## vd code ssh connect ec2
 
