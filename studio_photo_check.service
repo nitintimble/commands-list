@@ -1,0 +1,15 @@
+[Unit]
+Description=Studio Photo Check Django Service
+After=network.target
+
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/studio_photo_check_repo
+Environment="PATH=/home/ubuntu/studio_photo_check_repo/venv/bin"
+ExecStart=/home/ubuntu/studio_photo_check_repo/venv/bin/gunicorn --workers 3 --bind 0.0.0.0:5000 studio_photo_check_project.wsgi:application
+StandardOutput=file:/var/log/studio_photo_check.log
+StandardError=file:/var/log/studio_photo_check_error.log
+
+[Install]
+WantedBy=multi-user.target

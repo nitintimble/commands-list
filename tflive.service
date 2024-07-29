@@ -1,0 +1,28 @@
+#[Unit]
+#Description=Node.js Service for tflive
+#After=network.target
+
+#[Service]
+#User=ubuntu
+#WorkingDirectory=/home/ubuntu/tflive
+#ExecStart=/usr/bin/node /home/ubuntu/tflive/demo/nodejs/node-timble.js
+#Restart=always
+
+#[Install]
+#WantedBy=multi-user.target
+
+
+[Unit]
+Description=Node.js Service for tflive
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/tflive
+ExecStart=/usr/bin/node /home/ubuntu/tflive/demo/nodejs/node-timble.js
+Restart=always
+Environment=PATH=/usr/bin:/usr/local/bin:/bin:/usr/sbin:/sbin
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target

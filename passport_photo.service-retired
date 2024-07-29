@@ -1,0 +1,13 @@
+[Unit]
+Description=Gunicorn instance to serve passport_photo_flask
+After=network.target
+
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/passport_photo_flask
+Environment="PATH=/home/ubuntu/passport_photo_flask/venv/bin"
+ExecStart=/home/ubuntu/passport_photo_flask/venv/bin/gunicorn --workers 3 --bind unix:/home/ubuntu/passport_photo_flask/passport_photo_flask.sock -m 007 app:app
+
+[Install]
+WantedBy=multi-user.target
