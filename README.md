@@ -1,6 +1,10 @@
 # commands-list
 miscellaneous commands
 
+## ERROR: Could not install packages due to an OSError: [Errno 28] No space left on device
+
+pip cache purge
+
 ## Environment - v s code - bitbadh - windows
 
 python -m venv venv
